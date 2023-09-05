@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Manrope:wght@200&family=Montserrat:wght@300;400;600;700&family=Open+Sans:ital@0;1&family=Oswald:wght@400;700&family=Quicksand:wght@300&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin:0;
+}
+
+header .line{
+    background-color: #117050;
+    height: 10px;
+}
+.container{
+    max-width:1140px; /*tamanho max*/
+    margin:auto; /*pra que fique no meio*/
+}
+h1{
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    font-size:90px;
+    line-height:100px; /*juntar um pouco as letras*/
+    margin:0;
+    padding-top: 90px;
+    padding-bottom: 50px;
+}
+
+h2{
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    font-size:35px;
+    line-height:45px;
+    margin:0;
+}
+
+.header--area{
+ display:flex; /*usando display flex ja faz com que os itens fiquem um ao lado do outro*/
+justify-content: space-between;
+align-items: center; /*alinhando os itens dentro no centro*/
+height: 100px; /*Altura padrao*/
+
+}
+
+.header-left img{
+     width:64px;
+     height: 64px;
+     
+}
+
+.header-right{
+    display:flex;
+    align-items: center;
+}
+.header--search form{  
+    display:flex;
+}
+.header--search input{
+  font-size:16px;
+  padding: 8px 15px; /*7 em cima e embaixo e 10px na lateral*/
+  border:1px solid #e5dbdb;
+  outline: 0; /* para remover Aquele efeito ao clicar e escurecer a barra de pesquisa*/
+  width:100%;
+  max-width: 250px; /*tamanho max da barra de pesquisa*/
+}
+
+.header--search button{
+    border:0;
+    background: transparent; /*a img da lupacom fundo transparente*/
+    margin-left:-30px;
+    cursor:pointer; /*Maozinha indicando item clicavel na lupa*/
+}
+.header--search button img{
+    width:16px;
+    height: 16px;
+}
+
+.header--menu{
+    margin-left:50px;
+}
+.header--menu img{
+ width:24px;
+ height: 24px;
+ cursor:pointer;
+
+}
+
+.banner{
+    background-image: url(../imagens/bg.jpg);
+    background-position: center;
+    background-size: cover; /*pega toda area disponivel dependente do minitor utilizado*/
+    padding-top:90px;
+    padding-bottom:90px;  /*P-top e p-bottom vao deixar a imagem de fundo com mais espaço no inicio e no final do banner*/
+}
+
+
+
+.banner--imagens{
+    margin-top:50px;
+}
+
+
+.banner--imagens img{
+ width:148px;
+ height: 148px;
+border:6px solid #117050;
+border-radius:50%;
+margin-right:35px; 
+}
+
+.area1{
+display:grid;
+grid-template-columns: repeat(2, 1fr);
+}
+.area1--content{
+
+}
+
+.bar{
+    background-color: #117050;
+    width: 168px;
+    height: 22px;
+}
+
+.area1--content{
+    padding:80px;
+}
+
+
+.area1--img1{
+    height: 350px;
+    background-image: url(../imagens/f2.jpg);
+    background-size: cover;
+    background-position: center;
+
+    
+}
+.area1--img2{
+    grid-column: 2/ 3;
+    grid-row: 1/3;
+    background-image: url(../imagens/f1.jpg);
+    background-size: cover;
+    background-position: center; /*informa ao navegador que ele deve se certificar de que a imagem cobrirá sempre o (div) contêiner inteiro*/
+
+}
